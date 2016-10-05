@@ -1,0 +1,38 @@
+PROGRAM CounterGame
+  number = 0
+  person = 1
+  reversed = false
+
+  WHILE (number IS LESS THAN 100)
+    increment = 1
+    number = number + 1
+
+    IF (number divided by 7 returning the remainder EQUALS 0)
+      IF (reversed EQUALS false)
+        reversed = true
+      ELSE
+        reversed = false
+      END
+    END
+
+    IF (number divided by 11 returning the remainder EQUALS 0)
+      increment = 2
+    END
+
+    IF (reversed EQUALS TRUE)
+      person = person - increment
+    ELSE
+      person = person + increment
+    END
+
+    IF (person IS LESS THAN 1)
+      person = 10
+    END
+
+    IF (person IS GREATER THAN 10)
+      person = 1
+    END
+
+  END
+  RETURN person
+END

@@ -1,0 +1,38 @@
+PROGRAM GrilledCheeseSandwich
+  Turn on stovetop to medium heat
+  Place 1 pat of butter in pan
+  Place pan on stovetop
+  Take 1 slice of bread from rye loaf
+  Place slice of bread on cutting board
+  Squirt 1 tablespoon of mustard onto slice
+  3 TIMES DO
+    Place slice of cheese onto bread
+  END
+  Take 1 slice of bread from loaf
+  Squirt 1 tablespoon of mustard onto slice
+  Place slice of bread on top, mustard-side down
+  The 2 slices of bread, mustard and 3 slices of cheese are now a sandwich
+  Push spatula under sandwich
+  Place sandwich in pan
+  BreadFlipped = FALSE
+  WHILE (bottom of bread not golden yellow && crispy) DO
+    Wait 30 seconds
+    Lift bottom of bread with spatula and check bread
+  END
+  IF (BreadFlipped == FALSE)
+    Flip the sandwich over
+    BreadFlipped = TRUE
+  END
+  WHILE (bottom of bread not golden yellow && crispy) DO
+    Wait 30 seconds
+    Lift bottom of bread with spatula and check bread
+  END
+  Using spatula, move sandwich to plate
+  Turn off burner
+  IF (sandwich is cool enough to touch)
+    Eat sandwich
+  ELSE
+    Wait 2 minutes
+    Eat sandwich
+  END
+END

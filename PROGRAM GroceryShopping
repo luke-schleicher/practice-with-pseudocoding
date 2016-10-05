@@ -1,0 +1,19 @@
+PROGRAM GroceryShopping
+  Get Grocery Cart
+  Pull out list
+  Aisle = 1
+  UNTIL (aisle > 10 )  DO
+    FOR EACH item on list DO
+      IF item is in aisle
+        Put item into shopping cart
+        Cross out item from list
+      END
+    END
+  END
+  Push cart to checkout aisle
+  Place items in checkout area
+  Pay
+  Push cart to car
+  Place bags in car
+  Return shopping cart to corral
+END
